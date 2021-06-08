@@ -1,0 +1,43 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void answer()
+{
+	long long int a, b;
+	int count = 0;
+	
+	cin>>a>>b;
+	
+	for(int i = a; i <= b; i++)
+	{
+		int p = 0;
+		for(int j = 2; j < i; j++)
+		{
+			if(i % j == 0)
+			{
+				p = 1;
+				break;
+			}
+		}
+		if(p == 0 && i != 1)
+		{
+			count++;
+		}
+	}
+	
+	cout<<count<<endl;
+}
+
+int main()
+{
+	int t;
+	
+	cin>>t;
+	
+	while(t--)
+	{
+		answer();
+	}
+	
+	return 0;
+}

@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void answer()
+{
+	string s;
+	cin>>s;
+	
+	reverse(s.begin(), s.end());
+	
+	cout<<s<<endl;
+}
+
+int main()
+{
+	int t;
+	
+	cin>>t;
+	cin.ignore();
+	
+	while(t--)
+	{
+		answer();
+	}
+	
+	return 0;
+}
