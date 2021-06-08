@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+long long int factorial(int n)
+{
+	if(n == 1)
+	{
+		return 1;
+	}
+	else{
+		return n * factorial(n - 1);
+	}
+}
+
+int main()
+{
+	int t, n;
+	long long int fact;
+	cin>>t;
+	
+	while(t--)
+	{
+		cin>>n;
+		
+		fact = factorial(n);
+		
+		cout<<fact<<endl;
+	}
+	
+	return 0;
+}

@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void answer()
+{
+	long long int count = 0;
+	string s;
+	
+	getline(cin, s);
+	
+	int len = s.length();
+	
+	for(int i = 0; i < len; i++)
+	{
+		if(s[i] == ' ')
+		{
+			count++;
+		}
+	}
+	
+	cout<<count+1<<endl;
+}
+
+int main()
+{
+	int t;
+	
+	cin>>t;
+	cin.ignore();
+	while(t--)
+	{
+		answer();
+	}
+	
+	return 0;
+}

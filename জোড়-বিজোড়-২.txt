@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void answer()
+{
+	string num;
+	
+	cin>>num;
+	
+	int len = num.length();
+	
+	if(num[len-1] % 2 == 0)
+	{
+		cout<<"even"<<endl;
+	}
+	else{
+		cout<<"odd"<<endl;
+	}
+}
+
+int main()
+{
+	int t;
+	
+	cin>>t;
+	
+	while(t--)
+	{
+		answer();
+	}
+	
+	return 0;
+}

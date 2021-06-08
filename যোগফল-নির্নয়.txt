@@ -1,0 +1,30 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void answer()
+{
+	string num;
+	long long int n1, n2;
+	
+	cin>>num;
+	int len = num.length();
+	
+	n1 = num[0] - '0';
+	n2 = num[len - 1] - '0';
+	
+	cout<<"Sum = "<<n1+n2<<endl;
+}
+
+int main()
+{
+	int t;
+	cin>>t;
+	
+	while(t--)
+	{
+		answer();
+	}
+	
+	return 0;
+}

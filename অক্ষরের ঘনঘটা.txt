@@ -1,0 +1,40 @@
+#include<stdio.h>
+
+int main()
+{
+	int t, count;
+	char s[10001];
+	char ch;
+	
+	scanf("%d", &t);
+	
+	while(t--)
+	{
+		count = 0;
+		int i = 0;
+		getchar();
+		printf("Enter string: ");
+		gets(s);
+		printf("Enter character: ");
+		ch = getchar();
+		
+		while(s[i] != '\0')
+		{
+			if(s[i] == ch)
+			{
+				count++;
+			}
+			i++;
+		}
+		
+		if(count > 0)
+		{
+			printf("Occurrence is '%c' in '%s' = %d\n", ch, s, count);
+		}
+		else{
+			printf("'%c' is not present\n", ch);
+		}
+	}
+	
+	return 0;
+}
