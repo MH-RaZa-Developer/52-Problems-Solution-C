@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int t, x, k;
+	
+	cin>>t;
+	
+	while(t--)
+	{
+		cin>>x>>k;
+		int sum = 1;
+		
+		for(int i = 1; i <= k; i++)
+		{
+			sum += pow(x, i);
+		}
+		
+		cout<<"Result = "<<sum<<endl;
+	}
+	
+	return 0;
+}

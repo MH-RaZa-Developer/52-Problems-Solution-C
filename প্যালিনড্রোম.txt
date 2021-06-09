@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int t;
+	string s1, s2;
+	
+	cin>>t;
+	
+	while(t--)
+	{
+		cin>>s1;
+	
+		s2 = s1;
+		
+		reverse(s2.begin(), s2.end());
+		
+		if(s1 == s2)
+		{
+			cout<<"Yes! It is palindrome!"<<endl;
+		}
+		else{
+			cout<<"Sorry! It is not palindrome!"<<endl;
+		}
+	}
+	
+	return 0;
+}

@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+long long int factorial(long long int n)
+{
+	if(n == 1)
+	{
+		return 1;
+	}
+	else{
+		return n * factorial(n - 1);
+	}
+}
+
+int main()
+{
+	long long int t, n;
+	double sum;
+	
+	cin>>t;
+	
+	while(t--)
+	{
+		cin>>n;
+		sum = 0;
+		for(int i = 1; i <= n; i++)
+		{
+			sum += i/(float)factorial(i);
+		}
+		
+		printf("%.4lf\n", sum);
+	}
+	
+	return 0;
+}

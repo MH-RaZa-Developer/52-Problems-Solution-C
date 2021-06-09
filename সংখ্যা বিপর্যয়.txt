@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	long long int t, n, temp;
+	
+	cin>>t;
+	
+	while(t--)
+	{
+		cin>>n;
+		
+		int rev = 0;
+		temp = n;
+		while(temp != 0)
+		{
+			rev = rev * 10;
+			rev = rev + temp % 10;
+			temp = temp / 10;
+		}
+		
+		cout<<rev<<endl;
+	}
+	
+	return 0;
+}

@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	long long int t, x, n;
+	
+	cin>>t;
+	
+	while(t--)
+	{
+		cin>>x>>n;
+		
+		if(x > n)
+		{
+			cout<<"Invalid!"<<endl;
+		}
+		else{
+			for(int i = 1; x * i <= n; i++)
+			{
+				cout<<x * i<<endl;
+			}
+		}
+	}
+	
+	return 0;
+}
