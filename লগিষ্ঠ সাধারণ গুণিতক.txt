@@ -1,0 +1,41 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int gcd(int a, int b)
+{
+	int temp;
+	
+	while(b != 0)
+	{
+		temp = b;
+		b = a % b;
+		a = temp;
+	}
+	
+	return a;
+}
+
+int lcm(int gcdValue, int mul)
+{
+	return mul/gcdValue;
+}
+
+int main()
+{
+	int t, a, b;
+	
+	cin>>t;
+	
+	while(t--)
+	{
+		cin>>a>>b;
+		
+		int gcdValue = gcd(a, b);
+		
+		int mul = a * b;
+		
+		cout<<"LCM = "<<lcm(gcdValue, mul)<<endl;
+	}
+	
+	return 0;
+}

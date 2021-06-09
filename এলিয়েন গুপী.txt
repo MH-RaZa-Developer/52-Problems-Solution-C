@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void answer(double x)
+{
+	int days = 0;
+	
+	while(x >= 1)
+	{
+		x = x / 2.0;
+		days++;
+	}
+	
+	cout<<days<<" days"<<endl;
+}
+
+int main()
+{
+	int t;
+	double x;
+	cin>>t;
+	
+	while(t--)
+	{
+		cin>>x;
+		
+		answer(x);
+	}
+	
+	return 0;
+}

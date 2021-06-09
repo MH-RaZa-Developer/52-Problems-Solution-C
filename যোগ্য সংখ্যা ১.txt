@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	unsigned long int t, n, sum;
+	
+	cin>>t;
+	
+	while(t--)
+	{
+		cin>>n;
+		
+		sum = 0;
+		for(int i = 1; i <= n/2; i++)
+		{
+			if(n % i == 0)
+			{
+				sum = sum + i;
+			}
+		}
+		
+		if(sum == n)
+		{
+			cout<<"YES, "<<n<<" is a perfect number!"<<endl;
+		}
+		else{
+			cout<<"NO, "<<n<<" is not a perfect number!"<<endl;
+		}
+	}
+	
+	return 0;
+}

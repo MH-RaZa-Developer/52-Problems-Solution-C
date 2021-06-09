@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void answer()
+{
+	char ch;
+	
+	cin>>ch;
+	
+	if(ch >= 65 && ch <= 90)
+	{
+		cout<<"Uppercase Character"<<endl;
+	}
+	else if(ch >= 97 && ch <= 122)
+	{
+		cout<<"Lowercase Character"<<endl;
+	}
+	else if(ch >= '0' && ch <= '9')
+	{
+		cout<<"Numerical Digit"<<endl;
+	}
+	else{
+		cout<<"Special Character"<<endl;
+	}
+}
+
+int main()
+{
+	int t;
+	
+	cin>>t;
+	
+	while(t--)
+	{
+		answer();
+	}
+	
+	return 0;
+}

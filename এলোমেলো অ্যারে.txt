@@ -1,0 +1,68 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void answer()
+{
+	int n;
+	
+	cin>>n;
+	
+	int ara[n];
+	
+	for(int i = 0; i < n; i++)
+	{
+		cin>>ara[i];
+	}
+	
+	int sorted = 0;
+	int max = -1;
+	
+	for(int j = 0; j < n; j++)
+	{
+		if(ara[j] > max)
+		{
+			max = ara[j];
+		}
+		else{
+			sorted = 1;
+			break;
+		}
+	}
+	
+	int min = 10000;
+	int sorted2 = 0;
+	
+	for(int i = 0; i < n; i++)
+	{
+		if(ara[i] < min)
+		{
+			min = ara[i];
+		}
+		else{
+			sorted2 = 1;
+			break;
+		}
+	}
+	
+	if(sorted == 1 && sorted2 == 1)
+	{
+		cout<<"NO"<<endl;
+	}
+	else{
+		cout<<"YES"<<endl;
+	}
+}
+
+int main()
+{
+	int t;
+	
+	cin>>t;
+	
+	while(t--)
+	{
+		answer();
+	}
+	
+	return 0;
+}
