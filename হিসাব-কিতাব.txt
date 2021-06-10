@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int t, p, q, c;
+	
+	cin>>t;
+	
+	while(t--)
+	{
+		cin>>p>>q>>c;
+		int result = pow(p, q);
+		cout<<"Result = "<<result % c<<endl;
+	}
+	
+	return 0;
+}
